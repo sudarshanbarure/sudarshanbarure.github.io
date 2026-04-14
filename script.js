@@ -9,7 +9,8 @@
 // Replace these values after following CONTACT_SETUP.md
 const CONFIG = {
   // Google Apps Script Web App URL (from Step 2 in CONTACT_SETUP.md)
-  GOOGLE_SCRIPT_URL: "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE",
+  GOOGLE_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbzhfEt19hFn__2WfZuzOU_oNgHt8zm6ulbItKoxYx6g5l2s6WskPKCBXAnHUlBxAa2W/exec
+",
 
   // EmailJS — from https://www.emailjs.com
   EMAILJS_SERVICE_ID:  "YOUR_SERVICE_ID",
@@ -168,7 +169,7 @@ form.addEventListener("submit", async (e) => {
   } catch (err) {
     console.error("Form error:", err);
     // If Sheets wrote but email failed (or vice-versa), still show partial success
-    showMsg("error", "Something went wrong. Please email me directly at sudarshanbarure@gmail.com");
+    showMsg("error", "Something went wrong. Please email me directly at ajaybarure@gmail.com");
   } finally {
     setLoading(false);
   }
