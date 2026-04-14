@@ -65,7 +65,7 @@ const setupNote = document.getElementById("setupNote");
 
 // Hide setup note if keys are configured
 if (
-  CONFIG.GOOGLE_SCRIPT_URL !== "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE" &&
+  CONFIG.GOOGLE_SCRIPT_URL !== "https://script.google.com/macros/s/AKfycbzhfEt19hFn__2WfZuzOU_oNgHt8zm6ulbItKoxYx6g5l2s6WskPKCBXAnHUlBxAa2W/exec" &&
   CONFIG.EMAILJS_PUBLIC_KEY  !== "YOUR_PUBLIC_KEY"
 ) {
   setupNote && setupNote.remove();
