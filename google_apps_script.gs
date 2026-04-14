@@ -4,7 +4,7 @@
 // ═══════════════════════════════════════════════
 
 const SHEET_NAME = "Contact Submissions";
-const OWNER_EMAIL = "sudarshanbarure@gmail.com"; // Change if needed
+const OWNER_EMAIL = "ajaybarure@gmail.com"; // Change if needed
 
 function doPost(e) {
   try {
