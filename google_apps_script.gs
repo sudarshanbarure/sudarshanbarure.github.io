@@ -3,7 +3,7 @@
 // Paste this at: script.google.com → New Project
 // ═══════════════════════════════════════════════
 
-const SHEET_NAME = "Contact Submissions";
+const SHEET_NAME = "Portfolio Contacts";
 const OWNER_EMAIL = "ajaybarure@gmail.com"; // Change if needed
 
 function doPost(e) {
