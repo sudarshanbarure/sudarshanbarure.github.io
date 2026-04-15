@@ -8,27 +8,31 @@ const OWNER_EMAIL = "ajaybarure@gmail.com"; // Change if needed
 
 function doPost(e) {
   try {
-    const data = JSON.parse(e.postData.contents);
+    const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
-    const ss    = SpreadsheetApp.getActiveSpreadsheet();
-    let sheet   = ss.getSheetByName(SHEET_NAME);
+    // Debug log
+    Logger.log("Data: " + JSON.stringify(e.parameter));
 
-    // Create sheet + header row on first run
-    if (!sheet) {
-      sheet = ss.insertSheet(SHEET_NAME);
-      sheet.appendRow(["Timestamp", "Name", "Phone", "Email", "Query"]);
-      sheet.getRange(1, 1, 1, 5).setFontWeight("bold").setBackground("#00d4ff");
-    }
-
-    // Append the submission
     sheet.appendRow([
-      data.timestamp || new Date().toISOString(),
-      data.name  || "",
-      data.phone || "",
-      data.email || "",
-      data.query || "",
+      new Date(),
+      e.parameter.name,
+      e.parameter.phone,
+      e.parameter.email,
+      e.parameter.query
     ]);
 
+    return ContentService
+      .createTextOutput("SUCCESS")
+      .setMimeType(ContentService.MimeType.TEXT);
+
+  } catch (err) {
+    Logger.log("Error: " + err.message);
+
+    return ContentService
+      .createTextOutput("ERROR: " + err.message)
+      .setMimeType(ContentService.MimeType.TEXT);
+  }
+}
     // Send email notification to owner
     const subject = `📩 New Portfolio Enquiry from ${data.name}`;
     const body = `
