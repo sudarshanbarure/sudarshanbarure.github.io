@@ -7,7 +7,7 @@
 
 // ─── CONFIG ────────────────────────────────
 const CONFIG = {
-  GOOGLE_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbzhfEt19hFn__2WfZuzOU_oNgHt8zm6ulbItKoxYx6g5l2s6WskPKCBXAnHUlBxAa2W/exec",
+  GOOGLE_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbwWJ_JBkZsZ_zIpGLPGvj2WaWP2AGuEgW-lnhldXJJElFKg0pVdIxjoQ0vbgr48sHIv/exec",
 
   EMAILJS_SERVICE_ID:  "YOUR_SERVICE_ID",
   EMAILJS_TEMPLATE_ID: "YOUR_TEMPLATE_ID",
