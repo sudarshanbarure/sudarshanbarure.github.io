@@ -9,8 +9,7 @@
 // Replace these values after following CONTACT_SETUP.md
 const CONFIG = {
   // Google Apps Script Web App URL (from Step 2 in CONTACT_SETUP.md)
-  GOOGLE_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbzhfEt19hFn__2WfZuzOU_oNgHt8zm6ulbItKoxYx6g5l2s6WskPKCBXAnHUlBxAa2W/exec
-",
+  GOOGLE_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbzhfEt19hFn__2WfZuzOU_oNgHt8zm6ulbItKoxYx6g5l2s6WskPKCBXAnHUlBxAa2W/exec",
 
   // EmailJS — from https://www.emailjs.com
   EMAILJS_SERVICE_ID:  "YOUR_SERVICE_ID",
